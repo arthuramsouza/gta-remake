@@ -1,0 +1,8 @@
+# use glob syntax
+syntax: glob
+
+*.o
+*.lyx~
+.DS_Store
+#framework2
+*-build-desktop

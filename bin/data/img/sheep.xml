@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="sheep.png" width="131" height="424">
+    <!-- Created with TexturePacker -->
+    <!-- http://texturepacker.com -->
+    <!-- $TexturePacker:SmartUpdate:4087c207ed606f4a51128eab5e159189$ -->
+    <sprite n="sheep_03" x="0" y="0" w="131" h="106"/>
+    <sprite n="sheep_04" x="0" y="106" w="131" h="106"/>
+    <sprite n="sheep_05" x="0" y="212" w="131" h="106"/>
+    <sprite n="sheep_06" x="0" y="318" w="131" h="106"/>
+</TextureAtlas>

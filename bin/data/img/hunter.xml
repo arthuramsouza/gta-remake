@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:30e51506c064b40596bcd8208b8081d4$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="hunter.png" width="410" height="36">
+    <sprite n="dh-00.png" x="2" y="2" w="32" h="32"/>
+    <sprite n="dh-01.png" x="36" y="2" w="32" h="32"/>
+    <sprite n="dh-02.png" x="70" y="2" w="32" h="32"/>
+    <sprite n="dh-12.png" x="104" y="2" w="32" h="32"/>
+    <sprite n="dh-13.png" x="138" y="2" w="32" h="32"/>
+    <sprite n="dh-14.png" x="172" y="2" w="32" h="32"/>
+    <sprite n="dh-24.png" x="206" y="2" w="32" h="32"/>
+    <sprite n="dh-25.png" x="240" y="2" w="32" h="32"/>
+    <sprite n="dh-26.png" x="274" y="2" w="32" h="32"/>
+    <sprite n="dh-36.png" x="308" y="2" w="32" h="32"/>
+    <sprite n="dh-37.png" x="342" y="2" w="32" h="32"/>
+    <sprite n="dh-38.png" x="376" y="2" w="32" h="32"/>
+</TextureAtlas>

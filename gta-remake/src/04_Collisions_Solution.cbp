@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="04_Collisions_Solution" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug-Linux">
+				<Option output="../../bin/04_Collisions" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../bin" />
+				<Option object_output="../../bin" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="sfml-audio" />
+					<Add library="Box2D" />
+					<Add library="CGF-Linux" />
+					<Add library="libz" />
+					<Add directory="../../lib/Box2D-2.3.0/lib-Linux64" />
+					<Add directory="../../lib/SFML-2.4.2/lib-Linux64" />
+				</Linker>
+			</Target>
+			<Target title="Release-Linux">
+				<Option output="../../bin/04_Collisions" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../bin" />
+				<Option object_output="../../bin" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="sfml-audio" />
+					<Add library="Box2D" />
+					<Add library="CGF-Linux" />
+					<Add library="libz" />
+					<Add directory="../../lib/Box2D-2.3.0/lib-Linux64" />
+					<Add directory="../../lib/SFML-2.4.2/lib-Linux64" />
+				</Linker>
+			</Target>
+			<Target title="Debug-Windows">
+				<Option output="../../bin/04_Collisions" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../bin" />
+				<Option object_output="../../bin" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="../../bin/sfml-graphics-2.dll" />
+					<Add library="../../bin/sfml-window-2.dll" />
+					<Add library="../../bin/sfml-system-2.dll" />
+					<Add library="../../bin/sfml-audio-2.dll" />
+					<Add library="CGF-Windows" />
+					<Add library="Box2D" />
+					<Add library="../../bin/zlib1.dll" />
+					<Add directory="../../lib/Box2D-2.3.0/lib-Windows-CB" />
+					<Add directory="../../bin" />
+					<Add directory="../../lib" />
+				</Linker>
+			</Target>
+			<Target title="Release-Windows">
+				<Option output="../../bin/04_Collisions" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../bin" />
+				<Option object_output="../../bin" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../../bin/sfml-graphics-2.dll" />
+					<Add library="../../bin/sfml-window-2.dll" />
+					<Add library="../../bin/sfml-system-2.dll" />
+					<Add library="../../bin/sfml-audio-2.dll" />
+					<Add library="CGF-Windows" />
+					<Add library="Box2D" />
+					<Add directory="../../lib/Box2D-2.3.0/lib-Windows-CB" />
+					<Add directory="../../bin" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add directory="../../lib/CGF/include" />
+			<Add directory="../../lib/CGF/include/tmxloader" />
+			<Add directory="../../lib/CGF/include/pugixml" />
+			<Add directory="../../lib/Box2D-2.3.0/include" />
+			<Add directory="../../lib/SFML-2.4.2/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="../../lib" />
+		</Linker>
+		<Unit filename="PlayState_Solution.cpp" />
+		<Unit filename="PlayState_Solution.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

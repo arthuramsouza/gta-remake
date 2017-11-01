@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Format:
+name   => name of the animation sequence
+start  => starting frame
+end    => ending frame
+loop   => looping animation (default)
+-->
+<animation name="boom">
+    <sequence name="explode"  start="0" end="6" loop="false" />
+</animation>
+

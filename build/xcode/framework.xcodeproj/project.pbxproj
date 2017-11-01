@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002F39FA09D0881F00EBEB88 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F39F909D0881F00EBEB88 /* SDL.framework */; };
+		002F3A0009D0884600EBEB88 /* SDL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F39F909D0881F00EBEB88 /* SDL.framework */; };
+		002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
+		002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
+		1D60F9961364ABAA006F7842 /* libirrklang.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D60F9951364ABAA006F7842 /* libirrklang.dylib */; };
+		1D60FCF51367B770006F7842 /* CFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCDF1367B770006F7842 /* CFont.cpp */; };
+		1D60FCF61367B770006F7842 /* CGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCE01367B770006F7842 /* CGame.cpp */; };
+		1D60FCF71367B770006F7842 /* CImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCE11367B770006F7842 /* CImage.cpp */; };
+		1D60FCF81367B770006F7842 /* CMultiImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCE21367B770006F7842 /* CMultiImage.cpp */; };
+		1D60FCF91367B770006F7842 /* CSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCE31367B770006F7842 /* CSprite.cpp */; };
+		1D60FCFA1367B770006F7842 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCE41367B770006F7842 /* main.cpp */; };
+		1D60FCFB1367B770006F7842 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCE61367B770006F7842 /* base64.cpp */; };
+		1D60FCFC1367B770006F7842 /* TMXLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCE71367B770006F7842 /* TMXLoader.cpp */; };
+		1D60FCFD1367B770006F7842 /* MenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCE81367B770006F7842 /* MenuState.cpp */; };
+		1D60FCFE1367B770006F7842 /* PauseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCE91367B770006F7842 /* PauseState.cpp */; };
+		1D60FCFF1367B770006F7842 /* PlayMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCEA1367B770006F7842 /* PlayMap.cpp */; };
+		1D60FD001367B770006F7842 /* PlayMapTop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCEB1367B770006F7842 /* PlayMapTop.cpp */; };
+		1D60FD011367B770006F7842 /* PlayState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCEC1367B770006F7842 /* PlayState.cpp */; };
+		1D60FD021367B770006F7842 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCED1367B770006F7842 /* SDLMain.m */; };
+		1D60FD031367B770006F7842 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCEE1367B770006F7842 /* TextureManager.cpp */; };
+		1D60FD041367B770006F7842 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D60FCF01367B770006F7842 /* readme.txt */; };
+		1D60FD051367B770006F7842 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCF11367B770006F7842 /* tinystr.cpp */; };
+		1D60FD061367B770006F7842 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCF21367B770006F7842 /* tinyxml.cpp */; };
+		1D60FD071367B770006F7842 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCF31367B770006F7842 /* tinyxmlerror.cpp */; };
+		1D60FD081367B770006F7842 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60FCF41367B770006F7842 /* tinyxmlparser.cpp */; };
+		1D8A888B1349026F0019172B /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8A888A1349026F0019172B /* SDL_image.framework */; };
+		1DA22E181384191500305FC9 /* PlayPhysics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DA22E171384191500305FC9 /* PlayPhysics.cpp */; };
+		1DA22E2D1384BBEE00305FC9 /* CPhysics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DA22E2C1384BBEE00305FC9 /* CPhysics.cpp */; };
+		1DA22E441384BE0700305FC9 /* libBox2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA22E431384BE0700305FC9 /* libBox2D.a */; };
+		1DA22EE7138566A400305FC9 /* PlayMapPhysics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DA22EE6138566A400305FC9 /* PlayMapPhysics.cpp */; };
+		1DB3209F13992760007EC4DF /* CShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3209E13992760007EC4DF /* CShader.cpp */; };
+		1DB320AC1399471B007EC4DF /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB320A91399471B007EC4DF /* Shader.cpp */; };
+		1DB320AD1399471B007EC4DF /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB320AA1399471B007EC4DF /* ShaderManager.cpp */; };
+		1DB320AE1399471B007EC4DF /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB320AB1399471B007EC4DF /* ShaderProgram.cpp */; };
+		1DD93FCA1375D10300FBD4BE /* PlayMapAI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DD93FC91375D10300FBD4BE /* PlayMapAI.cpp */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				002F3A0009D0884600EBEB88 /* SDL.framework in Copy Frameworks into .app bundle */,
+			);
+			name = "Copy Frameworks into .app bundle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		002F39F909D0881F00EBEB88 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = /Library/Frameworks/SDL.framework; sourceTree = "<absolute>"; };
+		002F3C0009D093BD00EBEB88 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		002F3C6009D0951E00EBEB88 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = SOURCE_ROOT; };
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1D60F9951364ABAA006F7842 /* libirrklang.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libirrklang.dylib; path = /usr/local/lib/libirrklang.dylib; sourceTree = "<absolute>"; };
+		1D60FCDF1367B770006F7842 /* CFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CFont.cpp; path = ../../source/CFont.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCE01367B770006F7842 /* CGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CGame.cpp; path = ../../source/CGame.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCE11367B770006F7842 /* CImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CImage.cpp; path = ../../source/CImage.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCE21367B770006F7842 /* CMultiImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CMultiImage.cpp; path = ../../source/CMultiImage.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCE31367B770006F7842 /* CSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CSprite.cpp; path = ../../source/CSprite.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCE41367B770006F7842 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../source/main.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCE61367B770006F7842 /* base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = base64.cpp; path = ../../source/maploader/base64.cpp; sourceTree = "<group>"; };
+		1D60FCE71367B770006F7842 /* TMXLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TMXLoader.cpp; path = ../../source/maploader/TMXLoader.cpp; sourceTree = "<group>"; };
+		1D60FCE81367B770006F7842 /* MenuState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuState.cpp; path = ../../source/MenuState.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCE91367B770006F7842 /* PauseState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PauseState.cpp; path = ../../source/PauseState.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCEA1367B770006F7842 /* PlayMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayMap.cpp; path = ../../source/PlayMap.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCEB1367B770006F7842 /* PlayMapTop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayMapTop.cpp; path = ../../source/PlayMapTop.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCEC1367B770006F7842 /* PlayState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayState.cpp; path = ../../source/PlayState.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCED1367B770006F7842 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = ../../source/SDLMain.m; sourceTree = SOURCE_ROOT; };
+		1D60FCEE1367B770006F7842 /* TextureManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TextureManager.cpp; path = ../../source/TextureManager.cpp; sourceTree = SOURCE_ROOT; };
+		1D60FCF01367B770006F7842 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = readme.txt; path = ../../source/tinyxml/readme.txt; sourceTree = "<group>"; };
+		1D60FCF11367B770006F7842 /* tinystr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinystr.cpp; path = ../../source/tinyxml/tinystr.cpp; sourceTree = "<group>"; };
+		1D60FCF21367B770006F7842 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml.cpp; path = ../../source/tinyxml/tinyxml.cpp; sourceTree = "<group>"; };
+		1D60FCF31367B770006F7842 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlerror.cpp; path = ../../source/tinyxml/tinyxmlerror.cpp; sourceTree = "<group>"; };
+		1D60FCF41367B770006F7842 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlparser.cpp; path = ../../source/tinyxml/tinyxmlparser.cpp; sourceTree = "<group>"; };
+		1D60FD091367B7CF006F7842 /* CFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFont.h; path = ../../include/CFont.h; sourceTree = SOURCE_ROOT; };
+		1D60FD0A1367B7CF006F7842 /* CGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGame.h; path = ../../include/CGame.h; sourceTree = SOURCE_ROOT; };
+		1D60FD0B1367B7CF006F7842 /* CGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGameState.h; path = ../../include/CGameState.h; sourceTree = SOURCE_ROOT; };
+		1D60FD0C1367B7CF006F7842 /* CImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CImage.h; path = ../../include/CImage.h; sourceTree = SOURCE_ROOT; };
+		1D60FD0D1367B7CF006F7842 /* CMultiImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMultiImage.h; path = ../../include/CMultiImage.h; sourceTree = SOURCE_ROOT; };
+		1D60FD0E1367B7CF006F7842 /* CSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSprite.h; path = ../../include/CSprite.h; sourceTree = SOURCE_ROOT; };
+		1D60FD101367B7CF006F7842 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		1D60FD111367B7CF006F7842 /* TMXLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMXLoader.h; sourceTree = "<group>"; };
+		1D60FD121367B7CF006F7842 /* MenuState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuState.h; path = ../../include/MenuState.h; sourceTree = SOURCE_ROOT; };
+		1D60FD131367B7CF006F7842 /* PauseState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseState.h; path = ../../include/PauseState.h; sourceTree = SOURCE_ROOT; };
+		1D60FD141367B7CF006F7842 /* PlayMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayMap.h; path = ../../include/PlayMap.h; sourceTree = SOURCE_ROOT; };
+		1D60FD151367B7CF006F7842 /* PlayMapTop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayMapTop.h; path = ../../include/PlayMapTop.h; sourceTree = SOURCE_ROOT; };
+		1D60FD161367B7CF006F7842 /* PlayState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayState.h; path = ../../include/PlayState.h; sourceTree = SOURCE_ROOT; };
+		1D60FD171367B7CF006F7842 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDLMain.h; path = ../../include/SDLMain.h; sourceTree = SOURCE_ROOT; };
+		1D60FD181367B7CF006F7842 /* TexRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TexRect.h; path = ../../include/TexRect.h; sourceTree = SOURCE_ROOT; };
+		1D60FD191367B7CF006F7842 /* TextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextureManager.h; path = ../../include/TextureManager.h; sourceTree = SOURCE_ROOT; };
+		1D60FD1B1367B7CF006F7842 /* tinystr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinystr.h; sourceTree = "<group>"; };
+		1D60FD1C1367B7CF006F7842 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
+		1D8A888A1349026F0019172B /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = /Library/Frameworks/SDL_image.framework; sourceTree = "<absolute>"; };
+		1DA22E171384191500305FC9 /* PlayPhysics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayPhysics.cpp; path = ../../source/PlayPhysics.cpp; sourceTree = SOURCE_ROOT; };
+		1DA22E191384192500305FC9 /* PlayPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayPhysics.h; path = ../../include/PlayPhysics.h; sourceTree = SOURCE_ROOT; };
+		1DA22E2C1384BBEE00305FC9 /* CPhysics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CPhysics.cpp; path = ../../source/CPhysics.cpp; sourceTree = SOURCE_ROOT; };
+		1DA22E2E1384BC0A00305FC9 /* CPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPhysics.h; path = ../../include/CPhysics.h; sourceTree = SOURCE_ROOT; };
+		1DA22E431384BE0700305FC9 /* libBox2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBox2D.a; path = "../../lib/Box2D-2.1.0/lib-OSX/libBox2D.a"; sourceTree = SOURCE_ROOT; };
+		1DA22EE6138566A400305FC9 /* PlayMapPhysics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayMapPhysics.cpp; path = ../../source/PlayMapPhysics.cpp; sourceTree = SOURCE_ROOT; };
+		1DA22EE8138566B400305FC9 /* PlayMapPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayMapPhysics.h; path = ../../include/PlayMapPhysics.h; sourceTree = SOURCE_ROOT; };
+		1DB3209E13992760007EC4DF /* CShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CShader.cpp; path = ../../source/CShader.cpp; sourceTree = SOURCE_ROOT; };
+		1DB320A2139927B2007EC4DF /* CShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CShader.h; path = ../../include/CShader.h; sourceTree = SOURCE_ROOT; };
+		1DB320A91399471B007EC4DF /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Shader.cpp; path = ../../source/Shader.cpp; sourceTree = SOURCE_ROOT; };
+		1DB320AA1399471B007EC4DF /* ShaderManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderManager.cpp; path = ../../source/ShaderManager.cpp; sourceTree = SOURCE_ROOT; };
+		1DB320AB1399471B007EC4DF /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderProgram.cpp; path = ../../source/ShaderProgram.cpp; sourceTree = SOURCE_ROOT; };
+		1DB320AF1399472B007EC4DF /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = ../../include/Shader.h; sourceTree = SOURCE_ROOT; };
+		1DB320B01399472B007EC4DF /* ShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderManager.h; path = ../../include/ShaderManager.h; sourceTree = SOURCE_ROOT; };
+		1DB320B11399472B007EC4DF /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderProgram.h; path = ../../include/ShaderProgram.h; sourceTree = SOURCE_ROOT; };
+		1DD93FC91375D10300FBD4BE /* PlayMapAI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayMapAI.cpp; path = ../../source/PlayMapAI.cpp; sourceTree = SOURCE_ROOT; };
+		1DD93FCB1375D14300FBD4BE /* PlayMapAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayMapAI.h; path = ../../include/PlayMapAI.h; sourceTree = SOURCE_ROOT; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F39FA09D0881F00EBEB88 /* SDL.framework in Frameworks */,
+				002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */,
+				1D8A888B1349026F0019172B /* SDL_image.framework in Frameworks */,
+				1D60F9961364ABAA006F7842 /* libirrklang.dylib in Frameworks */,
+				1DA22E441384BE0700305FC9 /* libBox2D.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1DB320AF1399472B007EC4DF /* Shader.h */,
+				1DB320B01399472B007EC4DF /* ShaderManager.h */,
+				1DB320B11399472B007EC4DF /* ShaderProgram.h */,
+				1DB320A91399471B007EC4DF /* Shader.cpp */,
+				1DB320AA1399471B007EC4DF /* ShaderManager.cpp */,
+				1DB320AB1399471B007EC4DF /* ShaderProgram.cpp */,
+				1D60FD121367B7CF006F7842 /* MenuState.h */,
+				1D60FD131367B7CF006F7842 /* PauseState.h */,
+				1D60FD141367B7CF006F7842 /* PlayMap.h */,
+				1DD93FCB1375D14300FBD4BE /* PlayMapAI.h */,
+				1DA22EE8138566B400305FC9 /* PlayMapPhysics.h */,
+				1D60FD151367B7CF006F7842 /* PlayMapTop.h */,
+				1DA22E191384192500305FC9 /* PlayPhysics.h */,
+				1D60FD161367B7CF006F7842 /* PlayState.h */,
+				1D60FD171367B7CF006F7842 /* SDLMain.h */,
+				1D60FD181367B7CF006F7842 /* TexRect.h */,
+				1D60FD191367B7CF006F7842 /* TextureManager.h */,
+				1D60FD091367B7CF006F7842 /* CFont.h */,
+				1D60FD0A1367B7CF006F7842 /* CGame.h */,
+				1D60FD0B1367B7CF006F7842 /* CGameState.h */,
+				1D60FD0C1367B7CF006F7842 /* CImage.h */,
+				1D60FD0D1367B7CF006F7842 /* CMultiImage.h */,
+				1DA22E2E1384BC0A00305FC9 /* CPhysics.h */,
+				1DB320A2139927B2007EC4DF /* CShader.h */,
+				1D60FD0E1367B7CF006F7842 /* CSprite.h */,
+				1D60FCDF1367B770006F7842 /* CFont.cpp */,
+				1D60FCE01367B770006F7842 /* CGame.cpp */,
+				1D60FCE11367B770006F7842 /* CImage.cpp */,
+				1D60FCE21367B770006F7842 /* CMultiImage.cpp */,
+				1DA22E2C1384BBEE00305FC9 /* CPhysics.cpp */,
+				1DB3209E13992760007EC4DF /* CShader.cpp */,
+				1D60FCE31367B770006F7842 /* CSprite.cpp */,
+				1D60FCE41367B770006F7842 /* main.cpp */,
+				1D60FCE81367B770006F7842 /* MenuState.cpp */,
+				1D60FCE91367B770006F7842 /* PauseState.cpp */,
+				1D60FCEA1367B770006F7842 /* PlayMap.cpp */,
+				1DD93FC91375D10300FBD4BE /* PlayMapAI.cpp */,
+				1DA22EE6138566A400305FC9 /* PlayMapPhysics.cpp */,
+				1D60FCEB1367B770006F7842 /* PlayMapTop.cpp */,
+				1DA22E171384191500305FC9 /* PlayPhysics.cpp */,
+				1D60FCEC1367B770006F7842 /* PlayState.cpp */,
+				1D60FCED1367B770006F7842 /* SDLMain.m */,
+				1D60FCEE1367B770006F7842 /* TextureManager.cpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002F39F909D0881F00EBEB88 /* SDL.framework */,
+				002F3C6009D0951E00EBEB88 /* GLUT.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				002F3C0009D093BD00EBEB88 /* OpenGL.framework */,
+				1D8A888A1349026F0019172B /* SDL_image.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* framework.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D60FD0F1367B7CF006F7842 /* maploader */ = {
+			isa = PBXGroup;
+			children = (
+				1D60FCE61367B770006F7842 /* base64.cpp */,
+				1D60FCE71367B770006F7842 /* TMXLoader.cpp */,
+				1D60FD101367B7CF006F7842 /* base64.h */,
+				1D60FD111367B7CF006F7842 /* TMXLoader.h */,
+			);
+			name = maploader;
+			path = ../../include/maploader;
+			sourceTree = SOURCE_ROOT;
+		};
+		1D60FD1A1367B7CF006F7842 /* tinyxml */ = {
+			isa = PBXGroup;
+			children = (
+				1D60FCF01367B770006F7842 /* readme.txt */,
+				1D60FCF11367B770006F7842 /* tinystr.cpp */,
+				1D60FCF21367B770006F7842 /* tinyxml.cpp */,
+				1D60FCF31367B770006F7842 /* tinyxmlerror.cpp */,
+				1D60FCF41367B770006F7842 /* tinyxmlparser.cpp */,
+				1D60FD1B1367B7CF006F7842 /* tinystr.h */,
+				1D60FD1C1367B7CF006F7842 /* tinyxml.h */,
+			);
+			name = tinyxml;
+			path = ../../include/tinyxml;
+			sourceTree = SOURCE_ROOT;
+		};
+		29B97314FDCFA39411CA2CEA /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				1D60FD0F1367B7CF006F7842 /* maploader */,
+				1D60FD1A1367B7CF006F7842 /* tinyxml */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				1D60F9951364ABAA006F7842 /* libirrklang.dylib */,
+				1DA22E431384BE0700305FC9 /* libBox2D.a */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "framework" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = framework;
+			productInstallPath = "$(HOME)/Applications";
+			productName = framework;
+			productReference = 8D1107320486CEB800E47090 /* framework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "framework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* framework */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1D60FD041367B770006F7842 /* readme.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60FCF51367B770006F7842 /* CFont.cpp in Sources */,
+				1D60FCF61367B770006F7842 /* CGame.cpp in Sources */,
+				1D60FCF71367B770006F7842 /* CImage.cpp in Sources */,
+				1D60FCF81367B770006F7842 /* CMultiImage.cpp in Sources */,
+				1D60FCF91367B770006F7842 /* CSprite.cpp in Sources */,
+				1D60FCFA1367B770006F7842 /* main.cpp in Sources */,
+				1D60FCFB1367B770006F7842 /* base64.cpp in Sources */,
+				1D60FCFC1367B770006F7842 /* TMXLoader.cpp in Sources */,
+				1D60FCFD1367B770006F7842 /* MenuState.cpp in Sources */,
+				1D60FCFE1367B770006F7842 /* PauseState.cpp in Sources */,
+				1D60FCFF1367B770006F7842 /* PlayMap.cpp in Sources */,
+				1D60FD001367B770006F7842 /* PlayMapTop.cpp in Sources */,
+				1D60FD011367B770006F7842 /* PlayState.cpp in Sources */,
+				1D60FD021367B770006F7842 /* SDLMain.m in Sources */,
+				1D60FD031367B770006F7842 /* TextureManager.cpp in Sources */,
+				1D60FD051367B770006F7842 /* tinystr.cpp in Sources */,
+				1D60FD061367B770006F7842 /* tinyxml.cpp in Sources */,
+				1D60FD071367B770006F7842 /* tinyxmlerror.cpp in Sources */,
+				1D60FD081367B770006F7842 /* tinyxmlparser.cpp in Sources */,
+				1DD93FCA1375D10300FBD4BE /* PlayMapAI.cpp in Sources */,
+				1DA22E181384191500305FC9 /* PlayPhysics.cpp in Sources */,
+				1DA22E2D1384BBEE00305FC9 /* CPhysics.cpp in Sources */,
+				1DA22EE7138566A400305FC9 /* PlayMapPhysics.cpp in Sources */,
+				1DB3209F13992760007EC4DF /* CShader.cpp in Sources */,
+				1DB320AC1399471B007EC4DF /* Shader.cpp in Sources */,
+				1DB320AD1399471B007EC4DF /* ShaderManager.cpp in Sources */,
+				1DB320AE1399471B007EC4DF /* ShaderProgram.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = framework_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/Box2D-2.1.0/lib-OSX\"",
+				);
+				PRODUCT_NAME = framework;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = framework_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/Box2D-2.1.0/lib-OSX\"",
+				);
+				PRODUCT_NAME = framework;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				"GCC_VERSION[arch=x86_64]" = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../lib/Box2D-2.1.0/include",
+					/usr/local/include/irrKlang,
+					/Library/Frameworks/SDL_image.framework/Headers,
+					/Library/Frameworks/SDL.framework/Headers,
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				PREBINDING = NO;
+				SDKROOT = "";
+				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				"GCC_VERSION[arch=x86_64]" = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../lib/Box2D-2.1.0/include",
+					/usr/local/include/irrKlang,
+					/Library/Frameworks/SDL_image.framework/Headers,
+					/Library/Frameworks/SDL.framework/Headers,
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				PREBINDING = NO;
+				SDKROOT = "";
+				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

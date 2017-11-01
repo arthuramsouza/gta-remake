@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CGF" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux">
+				<Option output="../../lib/CGF-Linux" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../../bin" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="libZ" />
+					<Add directory="../../lib/Box2D-2.3.0/lib-Linux64" />
+					<Add directory="../../lib/SFML-2.4.2/lib-Linux64" />
+				</Linker>
+			</Target>
+			<Target title="Windows">
+				<Option output="../../lib/CGF-Windows" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../../bin" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="../../bin/zlib1.dll" />
+					<Add directory="../../lib/Box2D-2.3.0/lib-Windows-CB" />
+					<Add directory="../../lib/SFML-2.4.2/lib-Windows" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add directory="../../lib/CGF/include" />
+			<Add directory="../../lib/CGF/include/tmx" />
+			<Add directory="../../lib/CGF/include/pugixml" />
+			<Add directory="../../lib/Box2D-2.3.0/include" />
+			<Add directory="../../lib/SFML-2.4.2/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add library="sfml-audio" />
+			<Add library="Box2D" />
+		</Linker>
+		<Unit filename="../../lib/CGF/include/Anim.h" />
+		<Unit filename="../../lib/CGF/include/ClockHUD.h" />
+		<Unit filename="../../lib/CGF/include/Collision.h" />
+		<Unit filename="../../lib/CGF/include/Debug.h" />
+		<Unit filename="../../lib/CGF/include/EEDebugDraw3.h" />
+		<Unit filename="../../lib/CGF/include/FrameClock.h" />
+		<Unit filename="../../lib/CGF/include/Game.h" />
+		<Unit filename="../../lib/CGF/include/GameState.h" />
+		<Unit filename="../../lib/CGF/include/InputManager.h" />
+		<Unit filename="../../lib/CGF/include/MenuState.h" />
+		<Unit filename="../../lib/CGF/include/Physics.h" />
+		<Unit filename="../../lib/CGF/include/Sprite.h" />
+		<Unit filename="../../lib/CGF/include/TexRect.h" />
+		<Unit filename="../../lib/CGF/include/TextureManager.h" />
+		<Unit filename="../../lib/CGF/include/VectorUtils.h" />
+		<Unit filename="../../lib/CGF/include/pugixml/pugiconfig.hpp" />
+		<Unit filename="../../lib/CGF/include/pugixml/pugixml.hpp" />
+		<Unit filename="../../lib/CGF/include/tmx/DebugShape.h" />
+		<Unit filename="../../lib/CGF/include/tmx/Helpers.h" />
+		<Unit filename="../../lib/CGF/include/tmx/MapLayer.h" />
+		<Unit filename="../../lib/CGF/include/tmx/MapLoader.h" />
+		<Unit filename="../../lib/CGF/include/tmx/MapObject.h" />
+		<Unit filename="../../lib/CGF/include/tmx/QuadTreeNode.h" />
+		<Unit filename="../../lib/CGF/include/tmx/tmx2box2d.h" />
+		<Unit filename="../../lib/CGF/include/tmx/zconf.h" />
+		<Unit filename="../../lib/CGF/include/tmx/zlib.h" />
+		<Unit filename="../../lib/CGF/source/Collision.cpp" />
+		<Unit filename="../../lib/CGF/source/EEDebugDraw3.cpp" />
+		<Unit filename="../../lib/CGF/source/Game.cpp" />
+		<Unit filename="../../lib/CGF/source/InputManager.cpp" />
+		<Unit filename="../../lib/CGF/source/Physics.cpp" />
+		<Unit filename="../../lib/CGF/source/Sprite.cpp" />
+		<Unit filename="../../lib/CGF/source/TextureManager.cpp" />
+		<Unit filename="../../lib/CGF/source/pugixml/pugixml.cpp" />
+		<Unit filename="../../lib/CGF/source/tmxloader/MapLoaderPrivate.cpp" />
+		<Unit filename="../../lib/CGF/source/tmxloader/MapLoaderPublic.cpp" />
+		<Unit filename="../../lib/CGF/source/tmxloader/QuadTreeNode.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

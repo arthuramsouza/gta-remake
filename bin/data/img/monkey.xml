@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:9b3bce00b8fb1aad486fcddc8de8af50:1/1$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="monkey.png" width="512" height="1024">
+    <sprite n="monkey_1.png" x="2" y="2" w="140" h="168"/>
+    <sprite n="monkey_2.png" x="144" y="2" w="140" h="168"/>
+    <sprite n="monkey_arms_up.png" x="286" y="2" w="140" h="168"/>
+    <sprite n="monkey_dead.png" x="2" y="172" w="140" h="168"/>
+    <sprite n="monkey_jump_left.png" x="144" y="172" w="140" h="168"/>
+    <sprite n="monkey_jump_right.png" x="286" y="172" w="140" h="168"/>
+    <sprite n="monkey_push_left_1.png" x="2" y="342" w="140" h="168"/>
+    <sprite n="monkey_push_left_2.png" x="144" y="342" w="140" h="168"/>
+    <sprite n="monkey_push_right_1.png" x="286" y="342" w="140" h="168"/>
+    <sprite n="monkey_push_right_2.png" x="2" y="512" w="140" h="168"/>
+    <sprite n="monkey_walk_left_1.png" x="144" y="512" w="140" h="168"/>
+    <sprite n="monkey_walk_left_2.png" x="286" y="512" w="140" h="168"/>
+    <sprite n="monkey_walk_right_1.png" x="2" y="682" w="140" h="168"/>
+    <sprite n="monkey_walk_right_2.png" x="144" y="682" w="140" h="168"/>
+</TextureAtlas>

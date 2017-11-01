@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Format:
+name   => name of the animation sequence
+start  => starting frame
+end    => ending frame
+loop   => looping animation (default)
+-->
+<animation name="warrior">
+    <sequence name="spell-up"  start="0" end="6" loop="false" />
+    <sequence name="spell-left"  start="13" end="19" loop="false" />
+    <sequence name="spell-down"  start="26" end="32" loop="false" />
+    <sequence name="spell-right"  start="39" end="44" loop="false" />
+    <sequence name="thrust-up"  start="52" end="59" loop="false" />
+    <sequence name="thrust-left"  start="65" end="72" loop="false" />
+    <sequence name="thrust-down"  start="78" end="85" loop="false" />
+    <sequence name="thrust-right"  start="91" end="98" loop="false" />
+    <sequence name="walk-up"  start="104" end="112" loop="true" />
+    <sequence name="walk-left"  start="117" end="125" loop="true" />
+    <sequence name="walk-down"  start="130" end="138" loop="true" />
+    <sequence name="walk-right"  start="143" end="151" loop="true" />
+    <sequence name="slash-up"  start="156" end="161" loop="true" />
+    <sequence name="slash-left"  start="169" end="174" loop="false" />
+    <sequence name="slash-down"  start="182" end="187" loop="false" />
+    <sequence name="slash-right"  start="195" end="200" loop="false" />
+    <sequence name="shoot-up"  start="208" end="220" loop="false" />
+    <sequence name="shoot-left"  start="221" end="233" loop="false" />
+    <sequence name="shoot-down"  start="234" end="246" loop="false" />
+    <sequence name="shoot-right"  start="247" end="259" loop="false" />
+    <sequence name="die"  start="260" end="265" loop="false" />
+</animation>
+
